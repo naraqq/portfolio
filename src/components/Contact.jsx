@@ -7,9 +7,9 @@ function ContactMe() {
     Aos.init({ duration: 1000 });
   });
   return (
-    <div data-aos="flip-left" className="contact">
+    <div className="contact">
       <div className="brand-second">
-        <div className="about-brand">
+        <div data-aos="fade-right" className="about-brand">
           <span style={{ color: "white" }}>Hire me</span>
         </div>
       </div>

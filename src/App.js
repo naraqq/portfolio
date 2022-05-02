@@ -28,29 +28,27 @@ function App() {
   const scrollToEl = () => {};
 
   return (
-    <>
-      <div
-        className={
-          shownav && ref.current > 1
-            ? "main"
-            : "re-work" && ref.current <= 1
-            ? "on-render"
-            : "re-work"
-        }
-        id="totalarea"
-      >
-        <div className="brand">
-          <div className="brand-container">
-            <span>Front-End</span>
-          </div>
+    <div
+      className={
+        shownav && ref.current > 1
+          ? "main"
+          : "re-work" && ref.current <= 1
+          ? "on-render"
+          : "re-work"
+      }
+      id="totalarea"
+    >
+      <div className="brand">
+        <div className="brand-container">
+          <span>Front-End</span>
         </div>
-        <Nav />
-        <About />
-        <Main />
-        <div className="spacer"></div>
-        <ContactMe />
       </div>
-    </>
+      <Nav />
+      <About />
+      <Main />
+      <div className="spacer"></div>
+      <ContactMe />
+    </div>
   );
 }
 

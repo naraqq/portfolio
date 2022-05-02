@@ -9,7 +9,7 @@ function Main() {
   return (
     <>
       <div id="head-content" className="head-container">
-        <div data-aos="fade-left" className="brand-container">
+        <div data-aos="fade-right" className="brand-container">
           <span>Skills</span>
         </div>
       </div>

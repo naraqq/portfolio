@@ -3,12 +3,53 @@
   margin: 0;
   font-family: "Oleo Script Swash Caps", cursive;
 }
+
+.main {
+  width: 100%;
+  height: 100%;
+  /* background-color: #67b1c7; */
+  animation-name: blur;
+  animation-duration: 0.7s;
+}
+.on-render {
+  width: 100%;
+  height: 100%;
+  background-color: #02172d;
+}
+
+.re-work {
+  width: 100%;
+  height: 100%;
+  background-color: #02172d;
+  animation-name: blur2;
+  animation-duration: 0.7s;
+}
+
+@keyframes blur {
+  0% {
+    background-color: #02172d;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+@keyframes blur2 {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: #02172d;
+  }
+}
+
 .contact {
   width: 100%;
   height: 100vh;
   background-color: #02172d;
 }
-.about {
+.about-x {
   width: 100%;
   height: 100vh;
 }
@@ -19,13 +60,11 @@
 
 .container {
   display: flex;
-  width: 100%;
+  width: 100% !important;
   height: 90vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  /* flex-direction: column; */
 }
 
 .icon-container {
@@ -34,7 +73,6 @@
   display: flex;
   flex-direction: column;
   margin: 5px;
-  /* margin-top: 5px; */
   background-color: #02172d;
   border-radius: 10px;
   padding: 10px;
@@ -62,8 +100,8 @@
 .icon {
   padding-top: 10px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   animation-name: hover-scale;
   animation-duration: 1s;
   animation-fill-mode: backwards;
@@ -96,8 +134,12 @@
 }
 .brand-second {
   width: 100%;
-  height: 25vh;
   padding: 40px;
+}
+.x {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
 }
 
 .brand span {
@@ -106,10 +148,38 @@
   padding-bottom: 5px;
   border-bottom: 2px solid red;
 }
+.content-x {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about-left {
+  width: 50%;
+  height: 70%;
+  padding: 100px;
+}
+.about-left p {
+  font-size: 20px;
+  color: #02172d;
+}
+.about-right {
+  width: 50%;
+  height: 70%;
+  background-color: #02172d;
+}
+.my-img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+  margin-right: auto;
+}
 
 .top-container {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,6 +285,12 @@
 }
 
 @media only screen and (min-width: 667px) {
+  .content-x {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
   .main-head-container {
     margin-left: -20px;
   }
