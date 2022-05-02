@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import About from "./components/About";
-
+import ContactMe from "./components/Contact";
 function App() {
   let ref = useRef(0);
   useEffect(() => {
@@ -47,8 +47,8 @@ function App() {
         <Nav />
         <About />
         <Main />
-        {/* <Main /> */}
         <div className="spacer"></div>
+        <ContactMe />
       </div>
     </>
   );
