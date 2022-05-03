@@ -3,11 +3,69 @@
   margin: 0;
   font-family: "Oleo Script Swash Caps", cursive;
 }
+.find-me {
+  width: 100%;
+  margin-top: 100px;
+}
+.find-me h5 {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  font-family: "roboto";
+}
+
+.hire-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.hire-content p {
+  font-family: "roboto";
+  color: white;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.input-container {
+  width: 100%;
+  height: 60px;
+}
+.input-container input {
+  border: none;
+  background-color: #02172d;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 15px;
+}
+.textarea {
+  border: none;
+  background-color: #02172d;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 15px;
+}
+.textarea::placeholder {
+  color: silver;
+}
+.textarea:focus {
+  outline: none;
+}
+.input-container input::placeholder {
+  color: silver;
+  font-size: 14px;
+}
+.input-container input:focus {
+  outline: none;
+}
 
 .main {
   width: 100%;
   height: 100%;
-  /* background-color: #67b1c7; */
   animation-name: blur;
   animation-duration: 0.7s;
 }
@@ -49,9 +107,19 @@
   height: 100vh;
   background-color: #02172d;
 }
+.contact-y {
+  background-color: aqua;
+}
 .about-x {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+.brand-second-z span {
+  font-size: 25px;
+  border-bottom: 2px solid red;
+}
+.about-brand-x {
+  margin-bottom: 20px;
 }
 .brand-second span {
   font-size: 25px;
@@ -127,6 +195,10 @@
   width: 100%;
   height: 30vh;
 }
+.spacer-x {
+  width: 100%;
+  height: 10vh;
+}
 .brand {
   width: 100%;
   height: 25vh;
@@ -155,26 +227,30 @@
   flex-direction: column;
 }
 .about-left {
-  width: 50%;
+  width: 100%;
   height: 70%;
-  padding: 100px;
+  padding: 40px;
 }
-.about-left p {
-  font-size: 20px;
-  color: #02172d;
-}
+
 .about-right {
-  width: 50%;
+  width: 100%;
   height: 70%;
   background-color: #02172d;
+}
+.about-left p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "roboto";
+  color: gray;
 }
 .my-img {
   max-width: 100%;
   height: 100%;
-  border-radius: 50%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0);
-  margin-right: auto;
+
+  /* padding-left: 20%; */
+  border-radius: 50%;
+  /* transform: scale(0.7); */
 }
 
 .top-container {
@@ -261,7 +337,8 @@
 }
 
 .container p {
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 500;
   color: #02172d;
   margin: 0;
 }
@@ -285,6 +362,48 @@
 }
 
 @media only screen and (min-width: 667px) {
+  .hire-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .spacer {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .input-container:nth-child(1) {
+    margin-top: 40px;
+  }
+  .input-container {
+    height: 50px;
+  }
+  .about-brand-x {
+    margin-bottom: 100px;
+  }
+  .hire-content p {
+    width: 50%;
+  }
+  .brand-second-z-text {
+    padding-left: 20%;
+  }
+  .about-left {
+    width: 50%;
+    height: 100%;
+    padding-top: 0;
+  }
+  .my-img {
+    border-radius: 50%;
+  }
+  .textarea {
+    width: 50%;
+  }
+  .about-right {
+    width: 50%;
+    height: 70vh;
+    background: none;
+  }
   .content-x {
     width: 100%;
     height: 100%;

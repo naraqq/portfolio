@@ -7,16 +7,16 @@ function Main() {
     Aos.init({ duration: 1000 });
   });
   return (
-    <>
-      <div id="head-content" className="head-container">
+    <div className="items-with-animation">
+      <div className="head-container">
         <div data-aos="fade-right" className="brand-container">
           <span>Skills</span>
         </div>
       </div>
 
       <div className="container">
-        <div className="main-head-container">
-          <p>T-tools and technologies that i'm familier with:</p>
+        <div data-aos="fade-up" className="main-head-container">
+          <p>&bull; T-tools and technologies that i'm familier with:</p>
         </div>
         <div data-aos="fade-right" className="icon-container">
           <svg
@@ -399,7 +399,7 @@ function Main() {
           <span>VS Code</span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

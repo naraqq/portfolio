@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
 import Main from "./components/Main";
-import Nav from "./components/Nav";
+import Top from "./components/Top";
 import About from "./components/About";
 import ContactMe from "./components/Contact";
 function App() {
@@ -43,10 +43,13 @@ function App() {
           <span>Front-End</span>
         </div>
       </div>
-      <Nav />
+      <Top />
       <About />
+      <div className="spacer-x"></div>
+
       <Main />
       <div className="spacer"></div>
+      {/* <div className="spacer-x"></div> */}
       <ContactMe />
     </div>
   );

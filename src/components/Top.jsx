@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Nav() {
+function Top() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", showElement);
@@ -25,4 +25,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Top;
