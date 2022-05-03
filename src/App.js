@@ -4,13 +4,20 @@ import Main from "./components/Main";
 import Top from "./components/Top";
 import About from "./components/About";
 import ContactMe from "./components/Contact";
+import axios from "axios";
 function App() {
   let ref = useRef(0);
   useEffect(() => {
     ref.current = ref.current + 1;
     changeBackground();
     window.addEventListener("scroll", changeBackground);
+
+    axios
+      .get(`http://localhost:3003/`)
+      .then((res) => res.json)
+      .then((res) => console.log(res));
   });
+  const [data, setData] = useState([]);
   useEffect(() => {
     window.addEventListener("scroll", scrollToEl);
     window.scrollTo({ top: 0, behavior: "smooth" });
