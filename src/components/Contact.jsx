@@ -11,6 +11,7 @@ function ContactMe() {
     let name = e.target[0].value;
     let email = e.target[1].value;
     e.preventDefault();
+    e.target.reset();
   };
 
   return (
@@ -25,22 +26,41 @@ function ContactMe() {
             <div data-aos="fade-up">
               <p>Send me a message !</p>
             </div>
-            <form action="" onSubmit={handleSubmit}>
+            <form
+              method="POST"
+              enctype="multipart/form-data"
+              name="EmailForm"
+              action="https://formsubmit.co/gankhuyagnarmandakh2@gmail.com"
+              onSubmit={handleSubmit}
+            >
               <div className="input-t" data-aos="fade-up">
                 <div className="input-container">
-                  <input placeholder="Your Name" type="text" minLength={5} />
+                  <input
+                    placeholder="Your Name"
+                    type="text"
+                    minLength={3}
+                    name="name"
+                    required
+                  />
                 </div>
                 <div className="input-container">
-                  <input placeholder="Email address" type="email" />
+                  <input
+                    placeholder="Email address"
+                    name="email"
+                    type="email"
+                    required
+                  />
                 </div>
                 <textarea
                   className="textarea"
+                  name="textarea"
                   placeholder="Got a question or proposal, or just want
                   to say hello? Go ahead."
                   name=""
                   id=""
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
               <div data-aos="fade-up">

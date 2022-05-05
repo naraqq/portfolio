@@ -10,13 +10,12 @@ function App() {
   let ref = useRef(0);
   useEffect(() => {
     ref.current = ref.current + 1;
-    console.log(ref);
     window.addEventListener("scroll", changeBackground);
-    // axios.get(`http://localhost:3003`).then((res) => console.log(res));
   });
-  const [data, setData] = useState([]);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // axios.get(`http://localhost:3003`).then((res) => console.log(res));
   }, []);
 
   const [shownav, setShownav] = useState(true);
