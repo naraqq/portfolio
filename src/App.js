@@ -4,7 +4,6 @@ import Main from "./components/Main";
 import Top from "./components/Top";
 import About from "./components/About";
 import ContactMe from "./components/Contact";
-import axios from "axios";
 
 function App() {
   let ref = useRef(0);
@@ -15,7 +14,6 @@ function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    // axios.get(`http://localhost:3003`).then((res) => console.log(res));
   }, []);
 
   const [shownav, setShownav] = useState(true);

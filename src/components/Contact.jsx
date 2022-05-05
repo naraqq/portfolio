@@ -8,8 +8,6 @@ function ContactMe() {
   });
 
   const handleSubmit = (e) => {
-    let name = e.target[0].value;
-    let email = e.target[1].value;
     e.preventDefault();
     e.target.reset();
   };
