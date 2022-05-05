@@ -26,7 +26,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div data-aos="flip-left" className="about-right">
+        <div data-aos="fade-up" className="about-right">
           <img className="my-img" src="IMG_1544.jpg" alt="profile" />
         </div>
       </div>

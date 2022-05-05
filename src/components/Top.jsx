@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-function Top() {
+function Top(props) {
   const [show, setShow] = useState(false);
-  const [showX, setShowX] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", showElement);
   });
@@ -13,15 +12,15 @@ function Top() {
       setShow(false);
     }
   };
-  console.log(showX);
+
   return (
-    <div className="snap-one">
+    <>
       <div className="brand">
         <div className="brand-container">
           <span>Front-End</span>
         </div>
       </div>
-      <div className={showX ? "top-container-dis" : "top-container"}>
+      <div className="top-container">
         <h1 className={show ? "top-container-h1" : "top-container-h1-dis"}>
           <span>Hello, I'm Nara</span>, <br></br>a Software Developer currently
           living in
@@ -29,7 +28,7 @@ function Top() {
           Ulaanbaator, Mongolia.
         </h1>
       </div>
-    </div>
+    </>
   );
 }
 

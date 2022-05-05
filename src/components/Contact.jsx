@@ -6,6 +6,13 @@ function ContactMe() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   });
+
+  const handleSubmit = (e) => {
+    let name = e.target[0].value;
+    let email = e.target[1].value;
+    e.preventDefault();
+  };
+
   return (
     <div title="x" data-aos="fade-up" className="contact">
       <div className="brand-second">
@@ -18,10 +25,10 @@ function ContactMe() {
             <div data-aos="fade-up">
               <p>Send me a message !</p>
             </div>
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
               <div className="input-t" data-aos="fade-up">
                 <div className="input-container">
-                  <input placeholder="Your Name" type="text" />
+                  <input placeholder="Your Name" type="text" minLength={5} />
                 </div>
                 <div className="input-container">
                   <input placeholder="Email address" type="email" />
@@ -35,6 +42,11 @@ function ContactMe() {
                   cols="30"
                   rows="10"
                 ></textarea>
+              </div>
+              <div data-aos="fade-up">
+                <button type="submit" className="submit-button">
+                  Send
+                </button>
               </div>
             </form>
             <div data-aos="fade-up" className="find-me">

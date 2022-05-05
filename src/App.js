@@ -10,9 +10,8 @@ function App() {
   let ref = useRef(0);
   useEffect(() => {
     ref.current = ref.current + 1;
-    changeBackground();
+    console.log(ref);
     window.addEventListener("scroll", changeBackground);
-
     // axios.get(`http://localhost:3003`).then((res) => console.log(res));
   });
   const [data, setData] = useState([]);

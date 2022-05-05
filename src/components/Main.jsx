@@ -243,7 +243,7 @@ function Main() {
           </svg>
           <span>CSS</span>
         </div>
-        <div id="icon2" data-aos="fade-left" className="icon-container">
+        <div id="icon2" data-aos="fade-right" className="icon-container">
           <svg
             className="icon"
             version="1.1"
@@ -311,7 +311,7 @@ function Main() {
           <span>Responsive Websites</span>
         </div>
 
-        <div id="icon" data-aos="fade-right" className="icon-container">
+        <div id="icon" data-aos="fade-left" className="icon-container">
           <svg
             className="icon"
             width="256"
@@ -327,7 +327,7 @@ function Main() {
           <span>Javascript</span>
         </div>
 
-        <div data-aos="fade-left" className="icon-container">
+        <div data-aos="fade-right" className="icon-container">
           <svg
             className="icon"
             width="32px"
@@ -343,7 +343,7 @@ function Main() {
           </svg>
           <span>Node JS</span>
         </div>
-        <div data-aos="fade-right" className="icon-container">
+        <div data-aos="fade-left" className="icon-container">
           <svg
             className="icon"
             width="256px"
