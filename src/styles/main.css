@@ -5,7 +5,7 @@
 }
 .find-me {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .find-me h5 {
   font-size: 14px;
@@ -107,9 +107,7 @@
   height: 100vh;
   background-color: #02172d;
 }
-.contact-y {
-  background-color: aqua;
-}
+
 .about-x {
   width: 100%;
   height: 100%;
@@ -222,7 +220,7 @@
 }
 .content-x {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -260,6 +258,13 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+}
+.top-container-dis {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .top-container span {
   font-family: "Oleo Script Swash Caps", cursive;
@@ -362,9 +367,16 @@
 }
 
 @media only screen and (min-width: 667px) {
+  .top-container-h1 {
+    font-size: 40px;
+  }
+  .top-container-h1-dis {
+    font-size: 40px;
+  }
   .hire-content {
     width: 100%;
     display: flex;
+    margin-top: 10%;
     flex-direction: column;
     justify-content: center;
   }
@@ -391,7 +403,6 @@
   .about-left {
     width: 50%;
     height: 100%;
-    padding-top: 0;
   }
   .my-img {
     border-radius: 50%;
@@ -401,12 +412,14 @@
   }
   .about-right {
     width: 50%;
-    height: 70vh;
+    height: 50vh;
     background: none;
+    padding-top: 0;
+    padding-right: 10%;
   }
   .content-x {
     width: 100%;
-    height: 100%;
+    height: 75vh;
     display: flex;
     flex-direction: row;
   }
@@ -429,9 +442,32 @@
   .main-head-container {
     margin-left: 0;
   }
+  .top-container-h1 {
+    line-height: 150%;
+  }
+  .top-container-h1-dis {
+    line-height: 150%;
+  }
 }
 @media only screen and (min-width: 959px) {
   .main-head-container {
     margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-right {
+    background: none;
+    padding-top: 0;
+    width: 50%;
+    height: 70vh;
+  }
+  .top-container-h1 {
+    font-size: 50px;
+    line-height: 150%;
+  }
+  .top-container-h1-dis {
+    font-size: 50px;
+    line-height: 150%;
   }
 }

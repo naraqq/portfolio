@@ -7,7 +7,7 @@ function ContactMe() {
     Aos.init({ duration: 1000 });
   });
   return (
-    <div data-aos="fade-up" className="contact">
+    <div title="x" data-aos="fade-up" className="contact">
       <div className="brand-second">
         <div className="about-brand">
           <div data-aos="fade-right">
