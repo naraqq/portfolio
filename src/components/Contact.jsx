@@ -54,7 +54,6 @@ function ContactMe() {
                   name="textarea"
                   placeholder="Got a question or proposal, or just want
                   to say hello? Go ahead."
-                  name=""
                   id=""
                   cols="30"
                   rows="10"
