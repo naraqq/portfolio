@@ -4,15 +4,12 @@ import Main from "./components/Main";
 import Top from "./components/Top";
 import About from "./components/About";
 import ContactMe from "./components/Contact";
-import axios from "axios";
 
 function App() {
   let ref = useRef(0);
   useEffect(() => {
     ref.current = ref.current + 1;
-    console.log(ref);
     window.addEventListener("scroll", changeBackground);
-    // axios.get(`http://localhost:3003`).then((res) => console.log(res));
   });
   const [data, setData] = useState([]);
   useEffect(() => {
