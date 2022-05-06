@@ -10,6 +10,7 @@ function ContactMe() {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.location.reload(true);
     emailjs
       .sendForm(
         "service_9wukfyc",
@@ -25,6 +26,7 @@ function ContactMe() {
           console.log(error.text);
         }
       );
+    alert("Successful!!!");
   };
   const [toSend, setToSend] = useState({
     from_name: "",
