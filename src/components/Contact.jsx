@@ -79,6 +79,7 @@ function ContactMe() {
                   id=""
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
               <div data-aos="fade-up">

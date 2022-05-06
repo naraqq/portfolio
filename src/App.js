@@ -11,7 +11,7 @@ function App() {
     ref.current = ref.current + 1;
     window.addEventListener("scroll", changeBackground);
   });
-  const [data, setData] = useState([]);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
